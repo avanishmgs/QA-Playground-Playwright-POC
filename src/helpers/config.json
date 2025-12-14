@@ -1,0 +1,8 @@
+{
+  "env": {
+    "Execution_Env": "qaplayground"
+  },
+  "urls": {
+    "greenKartUrl": "https://${env}.dev/"
+  }
+}
