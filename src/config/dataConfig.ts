@@ -4,7 +4,7 @@ import commonReusables from "../utils/commonReusables";
  
 class DataConfig {
  
-    readonly greenkartData: string = 'qaplayground';
+    readonly qaplaygroundData: string = 'qaplayground';
 
     private userDataPath: any;
     private userData: any;
@@ -30,7 +30,7 @@ class DataConfig {
     }
      
     private getCSVDataFilePath(dataFile: string){
-        if (dataFile === this.greenkartData) {
+        if (dataFile === this.qaplaygroundData) {
             this.csvPath = path.join(__dirname, '..', 'data', 'qaplayground.csv');
         }
         else {

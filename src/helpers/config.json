@@ -3,6 +3,6 @@
     "Execution_Env": "qaplayground"
   },
   "urls": {
-    "greenKartUrl": "https://${env}.dev/"
+    "qaplaygroundUrl": "https://${env}.dev/"
   }
 }
