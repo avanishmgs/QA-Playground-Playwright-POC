@@ -35,7 +35,7 @@ jobs:
         run: |
           echo "Running Daily QA Playground Tests"
           echo "Using Tag: $TAG"
-          npx playwright test --grep "$TAG"
+          xvfb-run --auto-servernum npx playwright test --grep "$TAG"
 
       - name: Upload Playwright Report
         if: always()
