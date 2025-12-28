@@ -6,7 +6,7 @@ import loginSetup from "../helpers/LoginSetup";
 
 let pages: PageManager;
 
-test.describe.serial('QA Play Ground Validation', () => {
+test.describe.serial('@qaplayground QA Play Ground Validation', () => {
 
     test.beforeEach(async ({ page }) => {
         pages = new PageManager(page);
@@ -14,7 +14,7 @@ test.describe.serial('QA Play Ground Validation', () => {
         pages.logger.info("QAPlayGround Launched Successfully");
     });
 
-    test('TC_01-Verify QAPlayGround for NewTab', async ({ page, context }) => {
+    test('@smoke @regression TC_01-Verify QAPlayGround for NewTab', async ({ page, context }) => {
         await pages.QAPlayGroundPage.clickOnNewTab();
         pages.logger.info("QAPlayGround Click On New Tab Successfully");
         await test.step("Click to the Open New Tab Link", async () => {
@@ -28,7 +28,7 @@ test.describe.serial('QA Play Ground Validation', () => {
         });
     });
 
-    test('TC_02-Verify QAPlayGround for PopUp', async ({ page }) => {
+    test('@smoke @regression TC_02-Verify QAPlayGround for PopUp', async ({ page }) => {
         await test.step("Click to the PopUp Link", async () => {
             await pages.QAPlayGroundPage.clickOnPopWindow();
             await pages.QAPlayGroundAppsPage.clickOnPopUpLink();
@@ -36,7 +36,7 @@ test.describe.serial('QA Play Ground Validation', () => {
         });
     });
 
-    test('TC_03-Verify QAPlayGround for File Upload', async ({ page }) => {
+    test('@smoke @regression TC_03-Verify QAPlayGround for File Upload', async ({ page }) => {
         await test.step("Click to the File Upload Link", async () => {
             await pages.QAPlayGroundPage.clickOnFileUploadLink();
             await pages.QAPlayGroundAppsPage.uploadImageFile();
@@ -44,7 +44,7 @@ test.describe.serial('QA Play Ground Validation', () => {
         });
     });
 
-    test('TC_04-Verify QAPlayGround for Changeable Iframe', async ({ page }) => {
+    test('@smoke @regression TC_04-Verify QAPlayGround for Changeable Iframe', async ({ page }) => {
         await test.step("Click to the Iframe Link", async () => {
             await pages.QAPlayGroundPage.clickOnChangeableIFrameLink();
             await pages.QAPlayGroundAppsPage.verifyChangeableIframe();
@@ -52,7 +52,7 @@ test.describe.serial('QA Play Ground Validation', () => {
         });
     });
 
-        test('TC_05-Verify QAPlayGround for ShadowDom', async ({ page }) => {
+        test('@smoke @regression TC_05-Verify QAPlayGround for ShadowDom', async ({ page }) => {
         await test.step("Click to the Shadow Dom Link", async () => {
             await pages.QAPlayGroundPage.clickOnShadowDomLink();
             await pages.QAPlayGroundAppsPage.clickOnGreenButton();

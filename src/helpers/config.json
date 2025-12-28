@@ -1,8 +1,8 @@
 {
   "env": {
-    "Execution_Env": "qaplayground"
+    "Execution_Env": "qa"
   },
   "urls": {
-    "qaplaygroundUrl": "https://${env}.dev/"
+    "qaplaygroundUrl": "https://{env}.zolastaging.com/Matters/MatterList2.aspx"
   }
 }
